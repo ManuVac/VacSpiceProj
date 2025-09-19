@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24BBBFFA-A048-45F1-B010-F44302500465}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VacSpice.My.MyApplication</StartupObject>
+    <RootNamespace>VacSpice</RootNamespace>
+    <AssemblyName>VacSpice</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\pcburtin2\user\soft\VacSpice\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VacSpice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VacSpice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9453BAA785152C345DDE2BD27537B757E483DA42</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>VacSpice_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CtrlCVxx.Designer.vb">
+      <DependentUpon>CtrlCVxx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlCVxx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlInfo.Designer.vb">
+      <DependentUpon>CtrlInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlLabel.Designer.vb">
+      <DependentUpon>CtrlLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlLabel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CtrlCVxx.resx">
+      <DependentUpon>CtrlCVxx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlInfo.resx">
+      <DependentUpon>CtrlInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlLabel.resx">
+      <DependentUpon>CtrlLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="VacSpice_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpStream.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID5000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoNode.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpStream1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpStream11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpStream111.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penning1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penning11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penning111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpStream1111.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CH2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CH21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CH211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penning1111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node211.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modelElec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modelElec1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpStream12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node111.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node212.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node2121.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node21211.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node21212.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Node21213.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pulse2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
