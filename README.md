@@ -1,4 +1,4 @@
-Pour faire des simulations de calcule de pression sur des system UHV. 
+Pour faire des calcules de pression sur des systems UHV. 
 Les calculs sont fait avec Spice d'ou la nécéssité d'installer la directory Spice sous C:
 Pour commencer placer un Start puis déplacer le si nécessaire. 
 Ajouter un obj par exemple un tube simple, par un clic sur l'icone
