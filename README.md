@@ -10,4 +10,4 @@ Il n'est pas nécéssaire de placer un Stop a la fin,une gauge suffie
 eviter de laisser une bride sans obj connecté
 Quand vous estimez que votre montage est terminé appuiez sur le bouton calcule pour obtenir les simulations de pression en mbar
 l'obj gaz permet de creer une fuite ou un pic de pression 
-si l'option pic de pression est selectionnée il est possible d'exporter sous format excel les données avec le temps comme abscisse pour visualiser le pic de pression dans le temps.
+si l'option pic de pression est selectionnée il est possible d'exporter sous format excel les données avec le temps comme abscisse.
